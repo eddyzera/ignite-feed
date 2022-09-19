@@ -1,15 +1,14 @@
 import { Header } from "./components/Header"
 import styles from './App.module.css'
 import './global.css'
+import { Sidebar } from "./components/Sidebar"
 
 function App() {
   return (
    <>
      <Header />
      <div className={styles.wrapper}>
-      <aside>
-        sidebar
-      </aside>
+        <Sidebar />
       <main>
         <div>
           <h1>Edgar Silva</h1>

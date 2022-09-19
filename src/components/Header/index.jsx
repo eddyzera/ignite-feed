@@ -1,5 +1,5 @@
 import React from 'react'
-import IgniteLogo from '../assets/logo.svg'
+import IgniteLogo from '../../assets/logo.svg'
 import styles from './Header.module.css'
 
 export const Header = () => {
