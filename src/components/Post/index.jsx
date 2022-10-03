@@ -34,7 +34,7 @@ export const Post = ({ author, publishedAt, content }) => {
 
   const deleteComment = (comment) => {
     const commentWithoutDeleteOne = comments.filter(it => it !== comment)
-    setComments([...newCommentState])
+    setComments([...commentWithoutDeleteOne])
   }
 
   return (
@@ -67,6 +67,8 @@ export const Post = ({ author, publishedAt, content }) => {
           value={newCommentText}
           placeholder="Deixe um comentario"
           onChange={handleNewCommentChange}
+          onInvalid={handleNewCommentInvalid}
+          required
         />
         <footer>
           <button type="submit">Publicar</button>
